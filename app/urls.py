@@ -15,13 +15,14 @@ from core.views import CategoriaViewSet # nova linha
 from core.views import UserViewSet
 from core.views import EditoraViewSet
 from core.views import AutorViewSet
+from core.views import LivroViewSet
 
 router = DefaultRouter()
 router.register(r"users", UserViewSet, basename="users")
 router.register(r"categorias", CategoriaViewSet)
 router.register(r"editoras", EditoraViewSet, basename="editora")
 router.register(r"autores",AutorViewSet, basename="autor")
-
+router.register(r"livros",LivroViewSet,basename="livros")
 
 
 
